@@ -1,0 +1,605 @@
+*{
+    margin: 0 auto;
+}
+
+header{
+    box-shadow: 1px 0 3px
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+.row{
+    padding: 80px 0;
+    text-align: center;
+
+}
+
+.headline{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+.logo{
+
+}
+.logo h1 a{
+text-decoration: none;
+color: black;
+
+}
+.logo p{
+margin: 0px;
+}
+
+.links{
+
+}
+.links ul{
+    display: flex;
+    list-style-type: none;
+    line-height: 50px;
+
+
+}
+
+.links ul li{
+    margin-left: 53px;
+}
+
+.links ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #2f2b2b;
+}
+
+.links ul li:hover a{
+    color: rgb(15, 170, 15);
+}
+
+
+#home{
+    background-image: url("../slider.jpg");
+    background-size: cover;
+    height: 700px;
+    background-position: center;
+}
+
+.homepage{
+    padding-top: 200px;
+    position: relative;
+    animation: mymove 1.5s 1 linear
+
+}
+/* Animastion  Keyframes*/
+
+@keyframes mymove {
+    from   { left:-500px; top:0px;}
+    to  { left:0px; top:0px;}
+  }
+
+.homepage h1{
+font-size: 53px;
+}
+.homepage p{
+    font-weight: 100;
+    color: #29293a;
+    font-family: roboto,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif;
+    font-size: 55px;
+    letter-spacing: 8px;
+    padding-bottom: 25px;
+    
+}
+.homepage>a{
+    text-decoration: none;
+    background: #60cd96;
+    color: white;
+    padding: 18px 78px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-family: roboto,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif;
+    font-size: 16px;
+    transition: all  1sn linear;
+}
+
+
+ 
+.homepage>a:hover{
+    background: #ffa726;
+}
+
+
+
+.homepage ul{
+list-style-type: none;
+position: absolute;
+left: -9%;;
+}
+.homepage ul li a i{
+padding-top: 20px;
+    width: 20px;
+    color: gray;
+    transition: 1s;
+}
+
+.homepage ul li a:hover i{
+    color: #60cd96;
+}
+
+/* Midddlesection start */
+
+
+.blocks{
+display: flex;
+justify-content: space-between;
+}
+
+.blocks .block1{
+    background: #60cd96;
+    width: 25%;
+    margin-left: 0;
+    padding: 30px;
+    box-sizing: border-box;
+    
+}
+#block2{
+    background: #69d2e7;
+}
+#block3{
+    background: #f98f6f;
+}
+#block4{
+    background: #9d87c3;
+}
+
+.block1 .icon i{
+
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.block1 span{
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: roboto,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif;
+}
+.block1 p{
+    color: #e7edf3;
+    padding-top: 8px;
+    font-size: 18px;
+}
+#block4 .icon span{
+    font-size: 18px;
+    color: #e7edf3;
+    font-weight: 100;
+}
+
+#block4 .icon{
+    margin-bottom: 40px;
+}
+
+#block4  a{
+    display: block;
+    text-decoration: none;
+    background: #9d87c3;
+    margin-top: 28px;
+    color: white;
+    padding: 18px 58px;
+    border-radius: 50px;
+    border: 2px solid white;
+    font-weight: bold;
+    font-family: roboto,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif;
+    font-size: 16px;
+    transition: 1s all 0 ease-in-out;
+    text-align: center;
+ 
+}
+    
+ #block4 a:hover{
+     background: #60cd96;
+     border-color: #60cd96;
+ }
+
+ /* Middlesection end */
+
+ /* What We Offer section start  */
+
+ .title h1{
+    font-size: 40px;
+    margin-bottom: 13px;
+    font-family: roboto,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif;
+    font-weight: 500;
+    color: #000000a6;
+ }
+ .title p{
+ width: 63%;
+    color: #29293ab3;
+
+ }
+ .topcards{
+     margin-bottom: 267px;
+ }
+ .topcards .card{
+    position: relative;
+    width: 33%;
+    float: left;
+    padding: 20px 0;
+    
+ }
+
+ .topcards .card  .action{
+    width: 32px;
+    height: 32px;
+ 
+    border-radius: 50%;
+    position: absolute;
+    display: inline-block;
+    left: 30%;
+    background-color: rgba(96,205,150,.15);
+ }
+
+
+ .topcards .card:hover .action{
+     animation: actiondown .4s linear  forwards ;
+ }
+/* Action animation */
+
+@keyframes actiondown{
+    from{left: 30%; top: 0px; }
+    to{ left: 30%; top: 50px;}
+}
+
+
+ .topcards .card h6{
+
+        font-size: 20px;
+        font-weight: 500;
+        color: #29293a;
+        margin-top: 7px;
+ }
+
+ .topcards .icon{
+width: 63px;
+height: 63px;
+border-radius: 50%;
+position: relative;
+background-color: rgba(96,205,150,.15);
+
+
+ }
+
+ .topcards .card .icon::before{
+    font-family: "Font Awesome 5 Free";
+   content: "\f3ed";
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight: 900;
+    position: absolute;
+    left: -7px;
+    top: -2px;
+    font-size: 50px;
+    color: #60cd96;
+ }
+#card2 .icon::before{
+    content: "\f1b8";  
+}
+
+#card3 .icon::before{
+    content: "\f2c1";  
+}
+
+#card4 .icon::before{
+    content: "\f4da";  
+}
+
+#card5 .icon::before{
+    content: "\f53f";  
+}
+
+#card6 .icon::before{
+    content: "\f185";  
+}
+
+
+ 
+ .topcards p{
+    max-width: 78%;
+    line-height: 1.5;
+    color: #828590;
+
+ }
+
+ #card2 .action{
+     background: rgba(251, 145, 114, 0.15);
+     right: 2%;
+     top: 37%;
+ 
+ }
+ .topcards #card2:hover .action{
+    animation: actionup .4s ease  forwards ;
+ }
+ @keyframes actionup{
+
+
+    from{right: 2%; top: 37% }
+    to{ right: 2%; top: 0}
+}
+
+#card3 .action{
+    background-color:rgba(157,135,195,.15);
+    right: 2%;
+    top: 0;
+
+}
+#card5 .action{
+    background: rgba(157,135,195,.15);
+}
+.topcards #card3:hover .action{
+   animation: actiondownright .4s ease  forwards ;
+}
+@keyframes actiondownright{
+
+
+   from{right: 2%; top: 0 }
+   to{ right: 2%; top: 37%}
+}
+
+#card4 .action{
+    background: rgba(251, 145, 114, 0.15);
+    right: 2%;
+    top: 37%;
+
+}
+.topcards #card4:hover .action{
+   animation: actionup .4s ease  forwards ;
+}
+
+#card6 .action{
+    background-color: rgba(96,205,150,.15);
+   left: 30%;
+    top: 37%;
+
+}
+.topcards #card6:hover .action{
+   animation: actiondownright .4s ease  forwards ;
+}
+@keyframes actiondownright{
+
+
+   from{ left: 30%; top: 37% }
+   to{ left: 30%; top: 0%}
+}
+
+
+.topcards #card1,#card4{
+   
+    animation: cards 2s 1 ease-in-out
+
+}
+.topcards #card2,#card5{
+   
+   
+    animation: cards 1.8s 1 ease-in-out
+
+}
+.topcards #card3{
+   
+   
+
+    animation: cards 1.8s 1 ease-in-out
+
+}
+
+.topcards #card4,#card5,#card6{
+   
+  
+    animation: cards 1.5s 1 .3s ease-in-out forwards;
+    left: -100%;
+
+}
+
+@keyframes cards {
+    from   { left:-100%; top:0px;}
+    to  { left:0px; top:0px;}
+  }
+  /* about sectiopn end */
+
+/* aboutus section start */
+
+
+
+
+#aboutus{
+  
+    background: #f6f6f6;
+}
+#aboutus  .lead h1{
+    font-size: 40px;
+    margin-bottom: 13px;
+    font-family: roboto,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif;
+    font-weight: 500;
+    color: #000000a6;
+ }
+ #aboutus .lead p{
+ width: 63%;
+    color: #29293ab3;
+
+ }
+
+ .content{
+display: flex;
+margin: 37px 0;
+ }
+ .content .img{
+
+ }
+
+ 
+
+ .content .pgogressbar{
+padding-left: 7%;
+
+ }
+ .pgogressbar p{
+     text-align: left;
+     font-size: 19px;
+     color: #29293ab3;
+ }
+
+
+ .bar{
+margin: 19px 0;
+ }
+ .bar .deg75{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #29293ab3;
+    margin: 20px 0
+ }
+
+
+ .bar .deg75 .education{
+
+margin-left: 0;
+
+ 
+ }
+
+ .bar .deg75 .deg{
+     margin-right: 0
+ }
+
+ .linebar{
+    width: 100%;
+    height: 2px;
+    background: rgba(0,0,0,.05);
+    margin-top: 12px;
+    position: relative;
+    overflow: hidden;
+ }
+ .linebar::before{
+     content: "";
+     width: 75%;
+     height: 2px;
+     background: lightsalmon;
+     position: absolute;
+     left: -75%;
+     top: 0;
+     
+     animation: degree1 1s  1 linear forwards;
+  
+
+ }
+ #linear2::before{
+    width: 50%;
+ }
+
+ @keyframes degree1{
+     from{ left:-75; top: 0;}
+     to{left: 0%; top: 0;}
+ }
+ .pgogressbar .button{
+     margin-top: 50px;
+     text-align: left;
+
+     
+     
+ }
+ .pgogressbar a{
+    text-decoration: none;
+    background: #60cd96;
+    color: white;
+    padding: 18px 78px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-family: roboto,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif;
+    font-size: 16px;
+    transition: all .5s linear;
+   
+}
+
+
+ 
+.pgogressbar a:hover{
+    background: #ffa726;
+}
+
+
+/* Programs section start */
+
+#programs{
+    background-image: url("../bg_cover.jpg");
+    background-size: cover;
+  
+    background-position: center;
+}
+
+.portfolio{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.art{
+    text-align: left;
+    
+   
+    max-width: 32%;
+    background: white;
+
+}
+
+.art .img{
+    overflow: hidden;
+}
+.art .img img{
+    width: 370px;
+    height: 272px;
+    transition: all .5s linear;
+}
+
+.art .img:hover img{
+    transform: scale(1.1)
+}
+
+.art .artads{
+padding: 25px;
+}
+.art h3{
+color: #60cd96;
+font-size: 19px;
+cursor: pointer;
+transition: .5s;
+}
+.art h3:hover{
+    color: #828590;
+}
+
+.art p{
+margin: 25px 0;
+color: #828590;
+line-height: 1.6;
+}
+
+.art span{
+    color: #828590;
+
+}
+.art span a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: #828590;
+    transition: all .5s linear;    
+
+}
+
+.art span a:hover{
+    color: #60cd96;
+}
+/* programs section end */
+
